@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org/TR/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> Bienvenido</title>
+<meta name="Description" content="Empanadas en bogota"/>
+<meta name="keyword" content="Empanadas, comida rapida, deliciosas empanadas"/>
+<meta name="author" content="David Romero"/>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+function register()
+{
+
+var x =new Array();
+x[0]=document.getElementById('nombre').value; 
+x[1]=document.getElementById('apellido').value; 
+x[2]=document.getElementById('email').value; 
+x[3]=document.getElementById('password').value; 
+x[4]=document.getElementById('cpassword').value; 
+
+var h=new Array();
+
+h[0]="<span style='color:blue'> tu Nombre es  </span>";
+h[1]="<span style='color:blue'> tu Apellido es  </span>";
+h[2]="<span style='color:blue'> tu Email es  </span>";
+h[3]="<span style='color:blue'> tu Password es  </span>";
+h[4]="<span style='color:blue'> tu Confirmacion Password es </span>";
+
+var divs=new Array("mnombre","mapellido","memail","mpassword","mcpasseord");
+
+
+for (i in x){
+	
+	var error =h[i];
+	var div =divs[i];
+	
+		if (x[i]==""){
+			document.getElementById('div').innerHTML=ERROR; 
+		}else{
+			document.getElementById('div').innerHTML="ok"; 
+			}
+	}
+
+
+}
+
+function pass(){
+	
+	var primera=document.getElementById('passwod').value;
+	var segunda=document.getElementById('cpasswod').value;
+	
+	if(primera==segunda)
+		{
+		document.getElementById('mcpassword').innerHTML="CORRECTO";
+		}else{
+		document.getElementById('mcpassword').innerHTML="<span style='colore:blue'>Tu passeword no coincide</span>";
+		}
+	
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<div id="header">
+		<div id="logo"><img src="img/logo.jpg" width="100" >
+
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li><a href="test.html">Inicio</a></li>
+				<li><a href="pagina2.html">Menu</a></li>
+				<li><a href="pagina3.html">Contactos</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</body
+
+
+><form>
+
+
+<table  border="1">
+  <tr><td>Nombre:</td><td><input type="text" name="nombre" id="nombre"  onkeyup="register()"/></td><td><div id="mnombre"></div></td>
+  <tr>
+  <td>Apelllido:</td><td><input type="text" name="apellido" id="apellido"  onkeyup="register()"/></td>
+  <td><div id="mapellido"></div></td>
+  </tr>
+  <tr><td>Email:</td><td><input type="text" name="email" id="email"  onkeyup="register()"/></td>
+  <td><div id="memail" ></div></td>
+  </tr>
+  <tr><td>Password:</td><td><input type="text" name="password" id="password" onkeyup="register()"/></td>
+  <td><div id="mpassword" ></div></td>
+  </tr>
+  <tr><td>Conformacion Password:</td><td><input type="text" name="cpassword" id="cpassword"  onkeyup="pass()"/></td>
+  <td><div id="mcpassword" ></div></td>
+  </tr>
+ 
+</table>
+</br>
+<input name="enviar" type="button" value="ENVIAR" onclick="register()" />
+</form>
+
+
+
+</html>

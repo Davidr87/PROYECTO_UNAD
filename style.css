@@ -1,0 +1,177 @@
+body{
+padding: 0px;
+font-family: Arial;
+
+
+}
+
+
+body h{
+padding: 0px;
+font-family: Arial;
+color: #F03;
+
+}
+
+
+#header{
+border: 1px solid black;
+width: 85%;
+height: 120px;
+background: #202020;
+text-align: center;
+margin: 0px auto;
+}
+
+#wrapper{
+	width: 700px;
+	height: auto;
+	margin: 0px auto;
+}
+
+
+#main{
+	width: 85%;
+	height: 300px;
+	margin: 0px auto;
+	overflow: hidden;
+	
+}
+
+#wrapper #main ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 10s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+
+}
+
+#wrapper #main ul li{
+list-style: none;
+width: 100%;
+
+}
+
+
+#footer{
+	height: 40px;
+	border: 0px solid grey;
+	font-size: 14px;	
+	text-align: center;
+
+}
+
+#wrapper #main img {
+width: 595px; 
+height: 300px;
+} 
+
+
+@keyframes cambio{
+
+	0% {margin-left: 0;}
+		20% {margin-left: 0;}
+
+			25% {margin-left: -100%;}
+				45% {margin-left: -100%;}
+
+				50%{margin-left: -200%;}
+				70%{margin-left: -200%;}
+
+				75%{margin-left: -300%;}
+				100%{margin-left: -300%;}
+}
+
+#header #nav{
+	margin-top: -60px;
+	margin-left: 350px;
+}
+
+#header #nav ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 3px 8px 3px 8px;
+	background: #FFF;
+	font-size: 18px;
+	font-family: Comic Sans MS;
+	border-bottom-style: outset;
+	border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+#header #nav ul li a{
+text-decoration: none;
+
+}
+
+#header #nav ul li a:hover{
+color: red;
+font-size: 25px;
+}
+
+#header #logo img{
+margin-top: 20px;
+margin-left: -490px;
+
+}
+
+  #wrapper #table1{
+width: 700px;
+height: 250px;
+table-layout: fixed;
+
+}	 
+
+  #wrapper #table1 th{
+
+background: #CCC;
+text-align: justify;
+font-size: 14px;
+padding: 5px;
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 0px 0px 10px #000;
+
+}  	
+
+  #wrapper #table1 th h3{
+text-align:center;
+}
+
+
+  #wrapper #table2{
+width: 700px;
+height: 250px;
+table-layout: fixed;
+border: 0px solid black;
+}
+
+
+ #wrapper #table2 td{
+
+background: #CCC;
+text-align: justify;
+font-size: 20px;
+padding: 5px;
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 0px 0px 10px #000;
+
+}	
+
+ #wrapper #table2 strong{
+	 color: BLUE;
+	  }
+	  
+	  #footer {
+}
