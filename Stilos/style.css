@@ -1,0 +1,311 @@
+/* body{
+padding: 0px;
+font-family: Arial;
+} */
+
+.contenedor{
+width:80%;
+max-width:1000px;
+margin:0 auto;
+overflow:hidden;
+position: relative;
+}
+
+@font-face{
+font-family:fuente1;
+src:url(angsa.ttf);
+}
+
+
+#logo img{
+	width:118px;
+	height: 118px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 80px;
+}
+
+		
+#Titulo {
+	margin-top: 50px;
+	color: #005883;
+	font:fuente1;
+	font-size: 5;
+	text-align: center;
+	width: 50;
+}
+	
+
+#sfc9j1q1ccz1wmsylqccbbaaex9gybn2te1 {
+
+float: right;
+}
+	
+	
+	
+body h{
+padding: 0px;
+font-family: Arial;
+color: #F03;
+
+}
+
+header{
+border: 1px solid White;
+width: 100%;
+height: 150px;
+background: White;
+margin: 0px auto;
+}
+
+#MemuPrincipal{
+	background-color:#F47920;
+	width: 100%;
+	
+}
+
+#MemuPrincipal ul{
+	
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.#MemuPrincipal li a{
+	
+	background-color:#F47920;
+	width: 100%;
+	color: white;
+	display:black;
+	padding:10px 50px; 
+	display: block;
+	text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+}
+
+ 
+#MemuPrincipal ul li a {
+	
+	color: white;
+	display:black;
+	padding:10px 50px;
+	display: block;
+	text-decoration: none;
+    font-family: 'Open Sans',sans-serif;;
+}
+ 
+ 
+#MemuPrincipal ul li a:hover {
+	background-color:#B3B3B3;
+}
+
+
+.SubMenu li a{
+	
+	background-color:#F47920;
+	width: 100%;
+	color: white;
+	display:black;
+	padding:10px 50px; 
+	display: block;
+	text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+}
+
+
+.SubMenu > li {
+	float:left;
+}
+
+.SubMenu li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.SubMenu li:hover >ul {
+	display:block;
+	background-color:#B3B3B3;
+	cursor: #000;
+	cursor:pointer;
+}
+
+.SubMenu{
+	background-color:#F47920;
+	width: 100%;
+	
+}
+
+.SubMenu ul{
+	
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+	
+
+
+.SubMenu ul li a {
+	
+	color: white;
+	display:black;
+	padding:10px 50px;
+	display: block;
+	text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.SubMenu ul li a:hover {
+	background-color:#B3B3B3;
+	cursor: #000;
+	cursor:pointer;
+}
+
+
+section{
+	margin: 20px 0px 0px 0px;
+	border-style: solid;
+    border-width: 1px;
+	margin-top:20px;
+	width:68%;
+	height:770px;
+	float: right;
+	background: #005883;
+		
+}
+
+aside{
+	margin: 20px 0px 0px 0px;
+	border-style: solid;
+    background: #F0B429;
+	border-width: 1px;
+    width:29%;
+	height:770px;
+	float: left;
+}
+
+#Video p{
+	text-align:center;
+	color:#005883;
+	font-weight: bold;
+	font-family: 'Open Sans',sans-serif;
+	padding: 5px;
+	
+	
+}
+
+#wrapper{
+	width: 700px;
+	height: auto;
+	margin: 0px auto;
+}
+
+
+#main{
+	width: 85%;
+	height: 300px;
+	margin: 0px auto;
+	overflow: hidden;
+	
+}
+
+#wrapper #main ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 10s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+
+}
+
+#wrapper #main ul li{
+list-style: none;
+width: 100%;
+}
+
+#wrapper #main img {
+width: 595px; 
+height: 300px;
+} 
+
+@keyframes cambio{
+
+	0% {margin-left: 0;}
+		20% {margin-left: 0;}
+
+			25% {margin-left: -100%;}
+				45% {margin-left: -100%;}
+
+				50%{margin-left: -200%;}
+				70%{margin-left: -200%;}
+
+				75%{margin-left: -300%;}
+				100%{margin-left: -300%;}
+}
+
+#objectivos{
+	width:600px;
+	margin:0px;
+	padding:0px;
+    font-family: helvertica;
+/* 	min-height:100px; */
+	background-color:red;
+	margin: 20px 0px 0px 50px;
+}
+
+div.subapartado{
+	width:600px;
+	min-height:40px;
+	background-color:green;
+}
+
+div.Titulo1{
+	width:600px;
+	height:40px;
+	background: #005883;
+	overflow: hidden;
+	font-weight: bold;
+	font-family: 'Open Sans',sans-serif;
+	
+    /* font-size: 16px; */
+}
+
+p.psrrafo1{
+	margin:13px;
+	color:white;
+}
+
+div.Info1{
+	width:600px;
+	height:0px;
+	background-color:#009ed4;
+	    font-family: 'Open Sans',sans-serif;
+    /* font-size: 16px; */
+	overflow: hidden;
+}
+
+p.Info1{
+	margin:20px;
+	text-align:justify;
+	color:black;
+	-webkit-transition: height 0.2s;
+}
+
+div.subapartado:hover div.Info1{
+	height:120px;
+} 
+
+
+#footer p{
+	border: 0px solid grey;
+    margin: 880px 0px 80px 0px;
+	border-style: solid;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 12px;	
+	text-align: center;/* 
+    position: absolute;
+/*     width: 100%;
+    height: 10px; */ */
+
+}
